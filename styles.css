@@ -1,0 +1,127 @@
+body {
+  background-image: url("https://source.unsplash.com/1920x1080/?landscape,tropical");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: "Tilt Neon", cursive;
+}
+
+.container {
+  background: #222222cb;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 350px;
+}
+
+.expandir-sucesso {
+  animation: expandir-succes 0.8s linear 1 forwards;
+}
+
+@keyframes expandir-succes {
+  from {
+    height: 60px;
+  }
+  to {
+    height: 320px;
+  }
+}
+
+.expandir-erro {
+  animation: expandir-error 0.8s linear 1 forwards;
+}
+
+@keyframes expandir-error {
+  from {
+    height: 60px;
+  }
+  to {
+    height: 130px;
+  }
+}
+
+.input-btn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.input-pesquisa {
+  width: 18em;
+  height: 2em;
+  border-radius: 100vw;
+  border: none;
+  outline: none;
+  font-size: large;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.btn-pesquisa {
+  width: 3em;
+  height: 3em;
+  border-radius: 100vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-pesquisa:hover {
+  background: #80d0c7;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+}
+
+.btn-pesquisa:active {
+  background: #0093e9;
+  transition: 0.2s ease-in-out;
+}
+
+.infos,
+.error {
+  display: none;
+  padding: 0.5em 0.5em;
+}
+
+.fade-in {
+  display: block;
+  border-top: 1px solid #2222226c;
+  animation: fade-in 2s linear 1 forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.local {
+  text-align: center;
+  font-size: 2em;
+}
+
+.temperaturas {
+  margin: 0.8em 0em;
+}
+.temperaturas div:first-child {
+  font-size: 3em;
+}
+.temperaturas div:last-child {
+  color: #b9b9b9d0;
+}
+
+.extras {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error {
+  text-align: center;
+}
